@@ -2,7 +2,7 @@
 
  
 
-**To Mount a Disk:**
+**To Mount a Disk :**
 
 ```
 sudo mount -t ntfs /dev/sdb1 /media/usb1/
@@ -10,7 +10,7 @@ sudo mount -t ntfs /dev/sdb1 /media/usb1/
 
  
 
-**To view free space of connected disk:**
+**To view free space of connected disk :**
 
 ```
 df –h
@@ -26,7 +26,7 @@ rsync --ignore-existing -raz --progress /media/usb/Media/Pictures/ /media/usb1/M
 
  
 
-**Disable HDD Sleep –** 
+**Disable HDD Sleep :**
 
 ```
 hdparm -B255 /dev/sdX
@@ -34,7 +34,7 @@ hdparm -B255 /dev/sdX
 
  
 
-**Mount all –** 
+**Mount all :** 
 
 ```
 sudo mount -a
@@ -42,7 +42,7 @@ sudo mount -a
 
  
 
-**Mount drive to folder –** 
+**Mount drive to folder :** 
 
 ```
 sudo mount -t ntfs /dev/sdb1 /media/usb
@@ -50,7 +50,7 @@ sudo mount -t ntfs /dev/sdb1 /media/usb
 
  
 
-**List Disk –** 
+**List Disk :** 
 
 ```
 sudo fdisk -l
@@ -58,7 +58,7 @@ sudo fdisk -l
 
  
 
-**Copy Folder in verbose mode -** 
+**Copy Folder in verbose mode :** 
 
 ```
 cp -a -v ./. /media/nas/Media/Pictures/
@@ -68,7 +68,7 @@ cp -a -v ./. /media/nas/Media/Pictures/
 
  
 
-**Count no. of files in dir. –** 
+**Count no. of files in dir. :** 
 
 ```
 ls -1 | wc -l 
@@ -94,7 +94,7 @@ Save terminal output to file - https://askubuntu.com/questions/420981/how-do-i-s
 
  
 
-https://www.tecmint.com/watch-or-monitor-linux-log-files-in-real-time/
+Monitor Log files in Real Time : https://www.tecmint.com/watch-or-monitor-linux-log-files-in-real-time/
 
  
 
