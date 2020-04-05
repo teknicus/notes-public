@@ -1,60 +1,78 @@
-**Linux Notebook**
+# **Linux Notebook**
 
  
 
-To Mount a Disk:
+**To Mount a Disk:**
 
+```
 sudo mount -t ntfs /dev/sdb1 /media/usb1/
+```
 
  
 
-To view free space of connected disk:
+**To view free space of connected disk:**
 
+```
 df –h
+```
 
  
 
-To backup large folders:
+**To backup large folders:**
 
+```
 rsync --ignore-existing -raz --progress /media/usb/Media/Pictures/ /media/usb1/Media/Pictures/
+```
 
  
 
-Disable HDD Sleep – 
+**Disable HDD Sleep –** 
 
+```
 hdparm -B255 /dev/sdX
+```
 
  
 
-Mount all – 
+**Mount all –** 
 
+```
 sudo mount -a
+```
 
  
 
-Mount drive to folder – 
+**Mount drive to folder –** 
 
+```
 sudo mount -t ntfs /dev/sdb1 /media/usb
+```
 
  
 
-List Disk – 
+**List Disk –** 
 
+```
 sudo fdisk -l
+```
 
  
 
-Copy Folder in verbose mode - 
+**Copy Folder in verbose mode -** 
 
+```
 cp -a -v ./. /media/nas/Media/Pictures/
+```
 
  
 
  
 
-Count no. of files in dir. – 
+**Count no. of files in dir. –** 
 
+```
 ls -1 | wc -l 
+```
 
  
 
