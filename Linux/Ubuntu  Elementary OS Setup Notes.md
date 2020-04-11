@@ -2,13 +2,15 @@
 
 ###### Note: This is for my personal setup which runs on VMWare Workstation 15.
 
-##### 1) Remove Unwanted Packages
+- ##### Remove Unwanted Packages
+
 
 Open the AppCenter and remove packages that are not required
 
 
 
-##### 2) Update the System
+- ##### Update the System
+
 
 ```
 sudo apt update
@@ -20,7 +22,8 @@ sudo apt upgrade
 
 
 
-##### 3) Install restricted extras and essential utilities
+- ##### Install restricted extras and essential utilities
+
 
 ```
 sudo apt-get install software-properties-common
@@ -40,7 +43,8 @@ sudo apt install libdvd-pkg
 
 
 
-##### 4) Enable Gnome Extensions
+- ##### Enable Gnome Extensions
+
 
 ```
 sudo apt install gnome-tweaks
@@ -48,7 +52,8 @@ sudo apt install gnome-tweaks
 
 
 
-##### 5) Install VLC
+- ##### Install VLC
+
 
 ```
 sudo apt install vlc
@@ -56,7 +61,8 @@ sudo apt install vlc
 
 
 
-##### 6) Compression Formats
+- ##### Compression Formats
+
 
 ```
 sudo apt install rar unrar cabextract lzip lunzip arj unace p7zip-rar p7zip
@@ -64,7 +70,8 @@ sudo apt install rar unrar cabextract lzip lunzip arj unace p7zip-rar p7zip
 
 
 
-##### 7) Install GDebi - Click to install .deb packages
+- ##### Install GDebi - Click to install .deb packages
+
 
 ```
 sudo apt install gdebi
@@ -72,7 +79,7 @@ sudo apt install gdebi
 
 
 
-##### 8) Install Brave Browser
+- ##### Install Brave Browser
 
 ###### Ref : https://brave-browser.readthedocs.io/en/latest/installing-brave.html#linux
 
@@ -100,7 +107,7 @@ sudo apt install brave-browser
 
 
 
-##### 9) Install Typora
+- ##### Install Typora
 
 ```
 wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
@@ -120,7 +127,8 @@ sudo apt-get install typora
 
 
 
-##### 10) Install Teams
+- ##### Install Teams
+
 
 Download the .deb package from : https://products.office.com/en-us/microsoft-teams/download-app#desktopAppDownloadregion
 
@@ -132,6 +140,49 @@ sudo apt install ./<package>.deb
 
 
 
+- ##### Install VS Code : 
+
+Download the .deb package from https://code.visualstudio.com/docs/setup/linux
+
+```
+sudo apt install ./<package>.deb
+```
+
+
+
+- ##### Install Java 8
+
+```
+sudo apt install openjdk-8-jdk
+```
+
+
+
+- ##### Install NVM, NPM and NodeJS
+
+Ref: https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04
+
+1) Node Version Manager
+
+```
+curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh -o install_nvm.sh
+```
+
+```
+bash install_nvm.sh
+```
+
+
+
+2) NodeJS
+
+```sh
+nvm ls-remote //list versions
+```
+
+```
+nvm install 8.11.1 //select the version you want to use
+```
 
 
 
@@ -141,6 +192,13 @@ sudo apt install ./<package>.deb
 
 
 
+- ##### Gnome Customizations
+  - Change GDM theme : https://www.youtube.com/watch?v=YCFnYehZhCY
+  - Install Gnome-tweaks, themes, icon set : https://www.omgubuntu.co.uk/2017/03/make-ubuntu-look-like-mac-5-steps
+  - Install Plank, Set theme, add to startup : https://www.deviantart.com/p0umon/art/Gnosemite-theme-for-Plank-628809799
+  -  Permanently Hide default dock : https://www.linuxuprising.com/2018/08/how-to-remove-or-disable-ubuntu-dock.html
+
+- Useful Tools - Stacer, RAMbox, Kdenlive, gimp, gsconnect
 
 
 
@@ -150,25 +208,7 @@ sudo apt install ./<package>.deb
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-) Cleanup
+- ##### Cleanup
 
 ```
 sudo apt-get autoclean
