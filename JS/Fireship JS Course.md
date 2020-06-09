@@ -128,4 +128,73 @@
    -  `let` is like `var` but limited to the scope of a code block
    -  use `const` to avoid overwriting variable values
 
--  Functions
+
+
+
+### 4) Functions
+
+
+
+##### Notes
+
+- Difference between ***Parameter*** and ***Argument***
+
+  - A ***Parameter*** is what is present in the function definition/declaration and is what is used during the function execution
+
+  - An ***Argument*** is the value passed to a function through the function call
+
+  - example:
+
+    - ```javascript
+      function myFunction(val){ //val is parameter
+          console.log(val);
+      }
+      myFunction(33); //33 is the Argument
+      ```
+
+  - Function expression
+
+    - Preferred because the scope is not hoisted
+
+      - ```javascript
+        const makeBeer = function(qty) {
+            return '🍺'.repeat(qty);
+        }
+        ```
+
+
+
+### 5) Console
+
+#####  Notes
+
+Ref:
+
+
+
+### 6)  JS Exports
+
+Ref :  https://www.samanthaming.com/tidbits/79-module-cheatsheet/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
