@@ -1,0 +1,40 @@
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+
+
+
+SELECT song.artist_id, COUNT(song.title) 
+FROM song 
+GROUP BY song.artist_id;
+
+
+
+
+SELECT artist.name, COUNT(song.title) AS Scount
+FROM song 
+INNER JOIN artist ON song.artist_id=artist.id
+GROUP BY song.artist_id;
+
+
+-----ARTIST PAGE -------------------
+
+SELECT artist.name, song.artist_id, COUNT(song.title) 
+FROM song 
+INNER JOIN artist ON song.artist_id=artist.id
+GROUP BY song.artist_id;
+
+SELECT artist.name, COUNT(song.title) AS Scount FROM song INNER JOIN artist ON song.artist_id=artist.id GROUP BY song.artist_id ORDER BY artist.name ASC;
+
+
+--------SONG PAGE--------
+SELECT song.title, artist.name, SEC_TO_TIME(song.duration) AS "duration" FROM song INNER JOIN artist ON song.artist_id=artist.id ORDER BY artist.name, song.title ASC;
+
+--------SUMMARY-------------
+
+SELECT COUNT(*) 
+FROM song
+INNER JOIN artist ON song.artist_id=artist.id
+GROUP BY song.artist_id;
+
+SELECT COUNT(DISTINCT song.artist_id) as nArtists from song;
