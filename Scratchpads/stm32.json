@@ -10,7 +10,7 @@
       },
       "platforms": [
         {
-          "name": "[DEPRECATED - Please use new package index: https://github.com/stm32duino/BoardManagerFiles/raw/master/package_stmicroelectronics_index.json]",
+          "name": "STM32 MCU based boards",
           "architecture": "stm32",
           "version": "1.7.0",
           "category": "Contributed",
