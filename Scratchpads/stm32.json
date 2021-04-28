@@ -20,7 +20,7 @@
           "size": "23982361",
           "boards": [
             {
-              "name": "DEPRECATED - Please use new package index: https://github.com/stm32duino/BoardManagerFiles/raw/master/package_stmicroelectronics_index.json"
+              "name": "Nucleo-64"
             }
           ],
           "toolsDependencies": [
